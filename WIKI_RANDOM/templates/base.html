@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Wiki Generator! - {{ title }}</title>
+        <!-- This is how you make a comment in html-->
+        <link rel="stylesheet" href="https://unpkg.com/picnic">
+
+    </head>
+
+    <body>
+        <h1>Random Wiki Generator</h1>
+    {% block content %}
+    <form action="/randomize" method="get">
+        <input type="submit" value="Get a Random Wikipedia Paragraph!">
+    </form>
+    {% endblock %}
+    </body>
+
+</html>
